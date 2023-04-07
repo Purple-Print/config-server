@@ -1,0 +1,18 @@
+server:
+  port: 9999
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: #깃허브 설정파일 저장소 주소
+          #          passphrase: passphrase
+          ignore-local-ssh-settings: true
+          delete-untracked-branches: true
+          strict-host-key-checking: false
+          private-key: |
+            -----BEGIN OPENSSH PRIVATE KEY-----
+           
+            -----END OPENSSH PRIVATE KEY-----
